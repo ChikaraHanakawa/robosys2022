@@ -7,5 +7,5 @@ ng () {
       res=1
 }
 
-out=$(seq 0 9)
+out=$(seq 0 9 | python3 matrix.py)
 [ "${out}" = 0 ] || ng ${LINENO}
