@@ -8,15 +8,17 @@ import cv2
 import sys
 import numpy as np
 
-def Wachowski(A):
+def Wachowski(a):
   try:
-    return int(A)
+    KeanuReeves = np.identity(a)
+    return KeanuReeves
   except:
-    return float(A)
-    
-Keanu = np.array([0,1,2, [4,5,6]])
-Reeves = np.array([7,8,9, [10,11,12]])
+    print("") 
 
-KeanuReeves1 = Keanu + Reeves
+#Keanu = np.array([0,1,2, [4,5,6]])
+#Reeves = np.array([7,8,9, [10,11,12]])
 
-print(KeanuReeves1)
+answer = 0
+for line in sys.stdin:
+  answer = Wachowski(line)
+  print(answer)
