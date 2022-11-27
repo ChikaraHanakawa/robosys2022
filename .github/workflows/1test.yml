@@ -1,4 +1,4 @@
-name: 1test
+name: matrix
 on: push
 jobs:
   test:
@@ -6,4 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: All test
-      run: bash -xv ./1test.bash
+      run: bash -xv ./axam.bash
