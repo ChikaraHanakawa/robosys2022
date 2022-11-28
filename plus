@@ -3,15 +3,19 @@
 # SPDX-FileCopyrightText: 2022 Chikara Hanakawa
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
+import numpy as np
 
 def tonum(s):
   try:
     return int(s)
   except:
     return float(s)
-    return bool(s)
+    return str(s)
 ans = 0
+mat = np.identity(3)
 for line in sys.stdin:
   ans += tonum(line)
+  matrix = mat * ans
 
 print(ans)
+print(matrix)
