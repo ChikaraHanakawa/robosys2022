@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: All test
+    - name: matrix-test
       run: bash -xv ./axam.bash
