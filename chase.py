@@ -6,6 +6,8 @@ import numpy as np
 
 #動画取得
 cap = cv2.VideoCapture(0)
+#1フレームを保存する際の最低画素値
+oneframe = np.array([0, 0, 0, [0, 0, 0,[0, 0, 0]]])
 
 #色の設定
 def detect(frame):
@@ -43,6 +45,10 @@ while(cap.isOpened()):
   cv2.imshow('Video',frame)
   cv2.imshow('Mask',mask)
   cv2.imshow('Result',ans)
+
+  #青色を認識するとその1フレームで画像を保存
+  if mask != oneframe:
+    cv2.imwrite('blue.png', frame)
 
   #キーが打たれると終了
   key = cv2.waitKey(1)
