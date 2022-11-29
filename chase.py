@@ -33,9 +33,6 @@ while(cap.isOpened()):
   #動画の読み取り
   ret, frame = cap.read()
   
-  #サイズを小さくする
-  #frame = cv2.resize(frame, (int(frame.shape[1]/2), int(frame.shape[1]/2)))
-
   #グレースケールの取得
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
