@@ -1,9 +1,8 @@
-name: 1test
+name: inspection
 on: push
-jobs:
+jobs: 
   test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: All test
-      run: bash -xv ./1test.bash
+      run: bash -xv ./chase_inspection.bash

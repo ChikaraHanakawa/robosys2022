@@ -6,6 +6,7 @@ import numpy as np
 
 #動画取得
 cap = cv2.VideoCapture(0)
+
 #1フレームを保存する際の最低画素値
 oneframe = np.array([0, 0, 0, [0, 0, 0,[0, 0, 0]]])
 
@@ -56,5 +57,8 @@ while(cap.isOpened()):
   if key != -1:
     break
 
+#撮影終了
 cap.release()
+
+#ウィンドウを全て閉じる
 cv2.destroyAllWindows()
