@@ -5,7 +5,11 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import cv2
+import os
 import numpy as np
+
+#ディレクトリ名を宣言
+dirname = 'images'
 
 #動画取得
 cap = cv2.VideoCapture(0)
@@ -47,9 +51,14 @@ while(cap.isOpened()):
   cv2.imshow('Mask',mask)
   cv2.imshow('Result',ans)
 
+  #imagesディレクトリ作成
+  if not os.path.exists(dirname):
+    os.mkdir(dirname)
   #青色を認識するとその1フレームで画像を保存
-  if mask != oneframe:
-    cv2.imwrite('blue.png', frame)
+    if mask != oneframe:
+      cv2.imwrite(os.path.join(dirname, 'frame.png'), frame)
+      cv2.imwrite(os.path.join(dirname, 'mask.png'), mask)
+      cv2.imwrite(os.path.join(dirname, 'result.png'), ans)
 
   #キーが打たれると終了
   key = cv2.waitKey(1)
