@@ -1,9 +1,8 @@
 # robosys2022
 ![test](https://github.com/ChikaraHanakawa/robosys2022/actions/workflows/test.yml/badge.svg)  
-↑ テスト結果を反映したバッジの画像が埋め込まれる。  
+↑ テスト結果を反映したバッジの画像が埋め込まれる。標準入力から読み込んだ数字を足す。  
 ![chase_inspection](https://github.com/ChikaraHanakawa/robosys2022/actions/workflows/chase_inspection.yml/badge.svg)  
-↑ OpenCVでの結果を反映したバッジの画像が埋め込まれる。
-標準入力から読み込んだ数字を足す。
+↑ chase_inspection.bashでの結果を反映したバッジの画像が埋め込ます。  
 
 ## OpenCVとは
 OpenCVはintelのエンジニアが開発した、画像や動画に関する処理をまとめたオープンソースのライブラリです。画像や動画中に存在する物体の位置情報やパターン、動きをプログラムが識別できるようになります。認識した情報を用いて、画像の切り出しや編集も可能です。  
