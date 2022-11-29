@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# © 2022 Chikara Hanakawa 
+# SPDX-FileCopyrightText: 2022 Chikara Hanakawa
+# SPDX-License-Identifier: BSD-3-Clause
 
 import cv2
 import numpy as np
