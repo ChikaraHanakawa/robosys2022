@@ -14,13 +14,13 @@ OpenCVはintelのエンジニアが開発した、画像や動画に関する処
 ## 使用方法
 * terminal上にて以下のコマンドを実行  
   * **HTTPS**  
-  '''
-  https://github.com/ChikaraHanakawa/robosys2022.git  
-  '''
-  * **SSH**
-  '''
-  git@github.com:ChikaraHanakawa/robosys2022.git  
-  '''
+  ```
+  https://github.com/ChikaraHanakawa/robosys2022.git
+  ```
+  * **SSH**  
+  ```
+  git@github.com:ChikaraHanakawa/robosys2022.git
+  ```
 ## plus
 ### コマンド概要
 * 標準入力から読み込んで、数値を足していきます。  
