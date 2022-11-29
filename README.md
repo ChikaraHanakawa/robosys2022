@@ -43,5 +43,3 @@ OpenCVはintelのエンジニアが開発した、画像や動画に関する処
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです。  
   * [ryuichiueda/my_slides robotsys2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
   * © 2022 ChikaraHanakawa test in robosys2022
-## テスト環境
-© 2022 Ryuichi Ueda
