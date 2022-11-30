@@ -10,6 +10,6 @@ if [ $? = 0 ]; then
 else
   echo "chaseは異常終了"
 fi
-if [ -f blue.png ]; then
+if [ -f frame.png ]; then
   echo "png"
 fi
