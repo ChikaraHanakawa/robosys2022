@@ -12,12 +12,6 @@ ___
   ```
   https://github.com/ChikaraHanakawa/robosys2022.git
   ```
-## plus
-### プログラム概要
-* 標準入力から読み込んで、数値を足していきます。  
-### how to use
-* 与えたれた自然数以下の数値を全て足して表示します。  
-* terminalで`seq [自然数] | ./plus`  
 ## chase.py
 ### プログラム概要
 * 実行後にwebカメラが開き、`frame`,`mask`,`ans`のウィンドウが表示され、`mask`には2値化して、`ans`にはHSV色空間に変換ハイライトにして表示します。プログラム終了後に`images`というディレクトリを作り、検出した時の1フレームの画像を保存します。  
@@ -41,12 +35,12 @@ cd images/
 eog *.png
 ```
 ### 実行結果
-`frame`
-<img src="https://user-images.githubusercontent.com/85380968/204470832-46b8f9c5-3d78-44a8-927b-086ae99d1be5.png" width="500">  
-`mask`
-<img src="https://user-images.githubusercontent.com/85380968/204471807-8daaab3e-dce1-4b02-b0cc-88218ac00208.png" width="500">  
-`result`
-<img src="https://user-images.githubusercontent.com/85380968/204471825-edb1f5dd-f945-4596-bf5c-6ceab9713548.png" width="500">
+**frame**  
+<img src="https://user-images.githubusercontent.com/85380968/204781908-966b5140-dcb0-44b3-8e36-86e23252611b.png" width="500">  
+**mask**  
+<img src="https://user-images.githubusercontent.com/85380968/204782200-90c97c80-9503-4780-9456-5162284e4367.png" width="500">  
+**result**  
+<img src="https://user-images.githubusercontent.com/85380968/204782343-249a0b1a-1195-4c45-acca-0f54dddf11c9.png" width="500">  
 ### 本コードの説明と有益
 本コードは、青色を検出するものです。
 ## 動作確認済み環境
