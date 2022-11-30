@@ -1,8 +1,6 @@
 # robosys2022
 こちらは、千葉工業大学先進工学部未来ロボティクス学科2年4Semesterの講義で取り扱われているリポジトリになります。  
-本リポジトリには、講義で扱った`plus`,`plus_stdin`,`test.bash`と、  
-自分が作成したプログラムの`chase.py`,`chase_inspection.bash`などが含まれます。 
-
+本リポジトリには、自分が作成したプログラムの`chase.py`,`chase_inspection.bash`などが含まれます。 
 ___
 ![chase_inspection](https://github.com/ChikaraHanakawa/robosys2022/actions/workflows/chase_inspection.yml/badge.svg)   
 ↑ テスト結果を反映したバッジの画像が埋め込まれる。標準入力から読み込んだ数字を足す。  
@@ -49,7 +47,8 @@ eog *.png
 <img src="https://user-images.githubusercontent.com/85380968/204471807-8daaab3e-dce1-4b02-b0cc-88218ac00208.png" width="500">  
 `result`
 <img src="https://user-images.githubusercontent.com/85380968/204471825-edb1f5dd-f945-4596-bf5c-6ceab9713548.png" width="500">
-
+### 本コードの説明と有益
+本コードは、青色を検出するものです。
 ## 動作確認済み環境
 * Ubuntu 20.04.5 LTS
 * Python
