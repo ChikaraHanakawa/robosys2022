@@ -13,8 +13,15 @@ ___
   https://github.com/ChikaraHanakawa/robosys2022.git
   ```
 ## chase.py
-### プログラム概要
-* 実行後にwebカメラが開き、`frame`,`mask`,`ans`のウィンドウが表示され、`mask`には2値化して、`ans`にはHSV色空間に変換ハイライトにして表示します。プログラム終了後に`images`というディレクトリを作り、検出した時の1フレームの画像を保存します。  
+### 本コードの説明と有益
+本コードは青色を検出するものであり、**OpenCV**というライブラリが必要になります。(青色以外も検出することが可能です)  
+#### cap = cv2.VideoCapture(0)  
+PCのwebカメラ(内蔵カメラ)で映像又は、動画ファイルを読み込ます。引数を0にすることで、PCのwebカメラ(内蔵カメラ)を開きます。引数を1にすると、USBカメラを開きます。(基本的には0から順番に割り当てられているはず・・・たまに-1に割り当てられている可能性があり)  
+引数を動画ファイルのパスにすることで、動画ファイルを読み込むことができる。  
+#### cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+画像をBGR色空間からHSV色空間に変更します。  
+### プログラムの動作
+* 実行後にwebカメラが開き、`frame`,`mask`,`ans`のウィンドウが表示され、`mask`には2値化して、`ans`にはHSV色空間に変換ハイライトにして表示します。プログラム終了後に`images`というディレクトリを作り、検出した時の1フレームの画像を保存します。
 ### how to use
 1. clone後に、`chase.py`を実行  
 ```
@@ -41,8 +48,6 @@ eog *.png
 <img src="https://user-images.githubusercontent.com/85380968/204782200-90c97c80-9503-4780-9456-5162284e4367.png" width="500">  
 **result**  
 <img src="https://user-images.githubusercontent.com/85380968/204782343-249a0b1a-1195-4c45-acca-0f54dddf11c9.png" width="500">  
-### 本コードの説明と有益
-本コードは、青色を検出するものです。
 ## 動作確認済み環境
 * Ubuntu 20.04.5 LTS
 * Python
