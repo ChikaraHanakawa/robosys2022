@@ -10,7 +10,7 @@ ___
 ## 本リポジトリの使用方法
 * terminal上にて以下のコマンドを実行  
   ```
-  https://github.com/ChikaraHanakawa/robosys2022.git
+  $ git clone https://github.com/ChikaraHanakawa/robosys2022.git
   ```
 ## chase.py
 ### 本コードの説明と有益
@@ -25,21 +25,21 @@ PCのwebカメラ(内蔵カメラ)で映像又は、動画ファイルを読み�
 ### how to use
 1. clone後に、`chase.py`を実行  
 ```
-python3 chase.py
+$ python3 chase.py
 ```
 2. webカメラが閾値に設定した色を捉えるとその1フレームだけ画像を保存します。  
 3. 終了する時は、何かしらのキーを打ちます。
 4. プログラム終了後に、`image`ディレクトリを確認
 ```
-ls images/
+$ ls images/
 ```
 5. `images`ディレクトリに移動
 ```
-cd images/
+$ cd images/
 ```
 6. 保存した画像の表示
 ```
-eog *.png
+$ eog *.png
 ```
 ### 実行結果
 **frame**  
